@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def load_csv(path: str)-> list[dict]:
     df = pd.read_csv(path)
     print(f"Loaded {len(df)} rows from {path}")
