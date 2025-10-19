@@ -26,3 +26,4 @@ def get_embeddings(texts):
         print("Failed to decode JSON. Raw response:")
         print(response.text)
 
+print(get_embeddings("hello"))

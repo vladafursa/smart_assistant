@@ -1,5 +1,5 @@
 from pinecone import Pinecone, ServerlessSpec, CloudProvider, AwsRegion
-from config.settings import PINECONE_KEY, INDEX_NAME
+from config import PINECONE_KEY, INDEX_NAME
 import os
 from ingestions import parse_file
 from .preparation import prepare_chunks_for_indexing, split_texts
