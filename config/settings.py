@@ -8,6 +8,5 @@ HUGGINGFACE_KEY = os.getenv("HUGGINGFACE_KEY")
 LLM_KEY = os.getenv("LLM_KEY")
 
 INDEX_NAME = "smart_support"
-NAMESPACE = "default"
 CHUNK_SIZE = 500
 CHUNK_OVERLAP = 100

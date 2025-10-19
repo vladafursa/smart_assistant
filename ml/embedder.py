@@ -7,6 +7,7 @@ headers = {
     "Authorization": f"Bearer {HUGGINGFACE_KEY}",
 }
 
+
 def get_embeddings(texts):
     if isinstance(texts, str):
         texts = [texts]
