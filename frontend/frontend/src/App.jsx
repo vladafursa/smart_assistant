@@ -1,11 +1,23 @@
-import Header from './Header.jsx'
-import SummaryBox from './Summary.jsx';
+import Header from './components/Header.jsx'
+import AssistantPanel from './panels/AssistantPanel.jsx';
+import UserPanel from './panels/UserPanel.jsx';
+
 function App() {
     const summaryText = "There will be summary";
 return ( 
-    <div>
-    <Header></Header>
-      <SummaryBox text={summaryText} />
+    <div className="h-screen flex flex-col bg-neutral-50">
+        <div className='sticky top-0'>
+        <Header />
+        </div>
+      <div className="flex flex-1">
+        <div className="flex-[0.4] border-r p-4">
+          <UserPanel message="message" />
+        </div>
+        
+        <div className="flex-[0.6] p-4">
+          <AssistantPanel summary_text={summaryText} />
+        </div>
+      </div>
     </div>
 )
 }
