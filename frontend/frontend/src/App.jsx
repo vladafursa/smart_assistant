@@ -1,12 +1,15 @@
-import Header from './components/Header.jsx'
-import AssistantPanel from './panels/AssistantPanel.jsx';
-import UserPanel from './panels/UserPanel.jsx';
 import Home from './pages/Home.jsx';
-
+import Storage from './pages/Storage.jsx';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
     
 return ( 
-   <Home></Home>
+   <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+           <Route path="/storage" element={<Storage/>} />
+        </Routes>
+    </BrowserRouter>
 )
 }
 
