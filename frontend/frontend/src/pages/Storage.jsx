@@ -1,12 +1,13 @@
 import Header from '../components/Header.jsx'
+import DropBox from '../components/DropBox.jsx'
 
-const Home = () => {
+const Storage = () => {
 return ( 
     <div>
    <Header></Header>
-    <h1>Storage</h1>
+    <DropBox></DropBox>
    </div>
 )
 }
 
-export default Home
+export default Storage
